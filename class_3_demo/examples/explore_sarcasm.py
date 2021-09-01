@@ -15,7 +15,7 @@ def eval_conversation(text, tokenizer, model):
 
 def main():
     # 실행을 하면.. 아마도 사전훈련된 모델을 다운로드.
-    tokenizer = T5Tokenizer.from_pretrained("mrm8488/t5-base-finetuned-sarcasm-twitter")
+    tokenizer = AutoTokenizer.from_pretrained("mrm8488/t5-base-finetuned-sarcasm-twitter")
     model = AutoModelWithLMHead.from_pretrained("mrm8488/t5-base-finetuned-sarcasm-twitter")
 
 
